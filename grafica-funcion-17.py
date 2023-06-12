@@ -9,7 +9,7 @@ y = np.arange(-2, 2, 0.2)
 x, y = np.meshgrid(x, y)
 z = ((x)*(np.exp(-x**2-y**2)))
 
-ax.plot_surface(x, y, z, color = 'g', linewidth = 20)# Si pongoi el linewidth = 0 el ancho de la superficie se hace mas delgada, pero se sigue viendo igual.
+ax.plot_surface(x, y, z, color = 'g', linewidth = 20)# Si pongo el linewidth = 0 el ancho de las lineas se hace mas delgado.
 ax.set_title('$z = xe^{-x^2 - y^2}$')
 ax.set_xlabel('X')
 ax.set_ylabel('Y')

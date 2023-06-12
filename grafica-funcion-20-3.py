@@ -9,7 +9,7 @@ y = np.arange(-1, 1, .1)
 x, y = np.meshgrid(x, y)
 z = (np.cos(np.abs(x) + np.abs(y)))
 
-ax.plot_wireframe(x, y, z, color = 'k')
+ax.plot_wireframe(x, y, z, color = 'k', linewidth = 0.5)
 ax.set_title('$z = cos(|x| + |y|)$')
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
